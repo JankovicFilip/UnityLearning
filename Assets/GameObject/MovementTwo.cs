@@ -9,7 +9,6 @@ public class MovementTwo : MonoBehaviour
     
     public Key left = Key.A;
     public Key right =  Key.D;
-
     public Key forward =  Key.W;
     public Key back =  Key.S;
 
