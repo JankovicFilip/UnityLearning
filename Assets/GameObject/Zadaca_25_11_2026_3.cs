@@ -31,6 +31,10 @@ public class Zadaca_25_11_2026_3 : MonoBehaviour
             if (cube.transform.localScale.z < 5)
             {
                 cube.transform.localScale += new Vector3(0, 0, 0.5f);
+                if (cube.transform.localScale.z >= 5)
+                {
+                    cube.SetActive(false);
+                }
             }
         }
 
@@ -39,6 +43,10 @@ public class Zadaca_25_11_2026_3 : MonoBehaviour
             if (cube.transform.localScale.z > 0.5f)
             {
                 cube.transform.localScale += new Vector3(0, 0, -0.5f);
+                if (cube.transform.localScale.z <= 0.5f)
+                {
+                    cube.SetActive(false);
+                }
             }
         }
 
