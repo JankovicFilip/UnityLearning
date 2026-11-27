@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class Kocka : MonoBehaviour
 {
+    public int counter;
 
     void OnTriggerEnter(Collider other)
     {
-        Collider.
+        counter++;
+        Debug.Log(counter);
         Destroy(other.gameObject);
     }
 

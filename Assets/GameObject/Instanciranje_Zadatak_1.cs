@@ -15,7 +15,7 @@ public class Instanciranje_Zadatak_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current[instanciranjeSferi].isPressed)
+        if (Keyboard.current[instanciranjeSferi].wasPressedThisFrame)
         {
             for(int i = 0; i < 10; i++) 
             {
